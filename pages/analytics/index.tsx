@@ -29,7 +29,7 @@ import {
 
 import { IconType } from 'react-icons'
 
-import NavBar from './Navbar'
+import NavBar from '../../components/Navbar'
 
 import Link from 'next/link'
 
@@ -37,8 +37,7 @@ import EventList from "../../components/EventList"
 
 
 import AnalyticsList from "../../components/AnalyticsList"
-import DashboardList from "../../components/DashboardList"
-
+ 
 interface LinkItemProps {
   name: string
   icon: IconType,

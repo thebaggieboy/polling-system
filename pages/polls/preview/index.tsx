@@ -29,12 +29,10 @@ import {
 
 import { IconType } from 'react-icons'
 
-import NavBar from './Navbar'
-
+ 
 import Link from 'next/link'
 
-import EventList from "../../components/EventList"
-
+ 
 
 interface LinkItemProps {
   name: string
@@ -84,7 +82,7 @@ export default function SimpleSidebar() {
 
     <li>
         <input type="radio" id="hosting-small" name="hosting" value="hosting-small" className="hidden peer" required />
-        <label for="hosting-small" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
+        <label htmlFor="hosting-small" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
             <div className="block">
                 <div className="w-full text-xs font-semibold">0-50 MB</div>
                 <div className="w-full">Good for small websites</div>
@@ -109,7 +107,7 @@ export default function SimpleSidebar() {
 
     <li>
         <input type="radio" id="hosting-big-2" name="hosting" value="hosting-big" className="hidden peer"/>
-        <label for="hosting-big-2" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
+        <label htmlFor="hosting-big-2" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
             <div className="block">
                 <div className="w-full text-xs font-semibold">0-50 MB</div>
                 <div className="w-full">Good for big websites</div>
@@ -120,7 +118,7 @@ export default function SimpleSidebar() {
         </label>
     </li> <li>
         <input type="radio" id="hosting-big-3" name="hosting" value="hosting-big" className="hidden peer"/>
-        <label for="hosting-big-3" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
+        <label htmlFor="hosting-big-3" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
             <div className="block">
                 <div className="w-full text-xs font-semibold">0-50 MB</div>
                 <div className="w-full">Good for big websites</div>

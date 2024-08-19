@@ -29,12 +29,10 @@ import {
 
 import { IconType } from 'react-icons'
 
-import NavBar from './Navbar'
-
+ 
 import Link from 'next/link'
 
-import EventList from "../../components/EventList"
-
+ 
 
 interface LinkItemProps {
   name: string

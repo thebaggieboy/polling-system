@@ -109,12 +109,12 @@ export default function SimpleSidebar() {
         <h1 className='font-bold text-2xl '>New Event</h1> <br/>
         <form action="">
         <div className="mb-5">
-      <label for="large-input" className="block mb-2 text-sm font-medium text-black">Title</label>
+      <label htmlFor="large-input" className="block mb-2 text-sm font-medium text-black">Title</label>
       <input type="text" id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"/> <br/>
-      <label for="large-input" className="block mb-2 text-sm font-medium text-black">Description</label>
+      <label htmlFor="large-input" className="block mb-2 text-sm font-medium text-black">Description</label>
       <textarea id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"></textarea> <br/>
    
-      <label for="large-input" className="block mb-2 text-sm font-medium text-black">Event Date</label>
+      <label htmlFor="large-input" className="block mb-2 text-sm font-medium text-black">Event Date</label>
       <input type="date" id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"/> <br/>
 
       <a href="" style={{float:'right'}} className="bg-green-800 rounded p-3 text-white">Create</a>

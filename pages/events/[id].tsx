@@ -29,7 +29,7 @@ import {
 
 import { IconType } from 'react-icons'
 
-import NavBar from './Navbar'
+import NavBar from '../../components/Navbar'
 
 import Link from 'next/link'
 
