@@ -32,8 +32,7 @@ import { IconType } from 'react-icons'
  
 import Link from 'next/link'
 
-import EventList from "../../components/EventList"
-
+ 
 
 interface LinkItemProps {
   name: string
