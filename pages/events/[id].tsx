@@ -34,7 +34,9 @@ import NavBar from '../../components/Navbar'
 import Link from 'next/link'
 
 import EventList from "../../components/EventList"
+import { useRouter } from 'next/router'
 
+const router = useRouter()
 
 interface LinkItemProps {
   name: string
@@ -76,14 +78,14 @@ export default function SimpleSidebar() {
       <Box ml={{ base: 0, md: 60 }} p="10" className='bg-gray-100'>
         {/* Data display */}
         <div style={{fontFamily:'Poppins, Sans-serif', lineHeight:'100%', letterSpacing:2}} className=''>
-            <div className="ml-5 mt-2 text-xs p-5">
+     {/* {       <div className="ml-5 mt-2 text-xs p-5">
    <button type="button" onClick={()=> router.back()} className="w-full flex items-center justify-center w-1/2 px-5 py-2 text-xs text-black transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
     <svg className="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
     </svg>
     <span>Go back</span>
 </button>
-   </div>
+   </div>} */}
             <section className='p-5 bg-gray-100'>
             <button style={{float:'right'}} className="bg-green-800 p-3 text-xs rounded ml-2 text-white">
                         Invite
