@@ -76,62 +76,24 @@ export default function SimpleSidebar() {
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
       <Box ml={{ base: 0, md: 60 }} p="10" className='bg-gray-100'>
         {/* Data display */}
-    
-
-<ul className="grid w-full gap-6 md:grid-cols-2 p-10">
-<h2 className="mb-5 text-lg font-bold text-gray-900">How much do you expect to use each month?</h2> <br />
-
-
-    <li>
-        <input type="radio" id="hosting-small" name="hosting" value="hosting-small" className="hidden peer" required />
-        <label for="hosting-small" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
-            <div className="block">
-                <div className="w-full text-xs font-semibold">0-50 MB</div>
-                <div className="w-full">Good for small websites</div>
-            </div>
-            <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </label>
-    </li>
-    <li>
-        <input type="radio" id="hosting-big" name="hosting" value="hosting-big" className="hidden peer"/>
-        <label for="hosting-big" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
-            <div className="block">
-                <div className="w-full text-xs font-semibold">0-50 MB</div>
-                <div className="w-full">Good for big websites</div>
-            </div>
-            <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </label>
-    </li>
-
-    <li>
-        <input type="radio" id="hosting-big-2" name="hosting" value="hosting-big" className="hidden peer"/>
-        <label for="hosting-big-2" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
-            <div className="block">
-                <div className="w-full text-xs font-semibold">0-50 MB</div>
-                <div className="w-full">Good for big websites</div>
-            </div>
-            <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </label>
-    </li> <li>
-        <input type="radio" id="hosting-big-3" name="hosting" value="hosting-big" className="hidden peer"/>
-        <label for="hosting-big-3" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
-            <div className="block">
-                <div className="w-full text-xs font-semibold">0-50 MB</div>
-                <div className="w-full">Good for big websites</div>
-            </div>
-            <svg className="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </label>
-    </li>
-</ul>
-
+        <section className="bg-white">
+    <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="mr-auto place-self-center lg:col-span-7">
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-black">Payments tool for software companies</h1>
+            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl  text-gray-400">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
+            <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-black rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                Get started
+                <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="#" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                Speak to Sales
+            </a> 
+        </div>
+        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            hbubub
+        </div>                
+    </div>
+</section>
 
   <br/>
 
