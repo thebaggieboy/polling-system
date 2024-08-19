@@ -8,8 +8,8 @@ export default function Datacard() {
   <Card>
     <CardHeader>
       <img src="/icons/Pie shape 2.png" />
-      <p size='sm'> Total No. Of Events</p>
-      <p size='md' className='font-bold'> 20</p>
+      <p className="text-xl"> Total No. Of Events</p>
+      <p className='font-bold text-xs'> 20</p>
     </CardHeader>
     <CardBody>
    
@@ -20,8 +20,8 @@ export default function Datacard() {
   <Card>
     <CardHeader>
       <img src="/icons/Pie shape 2.png" />
-      <p size='sm'> Total No. Of Polls</p>
-      <p size='md' className='font-bold'> 20</p>
+      <p className="text-xl"> Total No. Of Polls</p>
+      <p className='font-bold text-xs'> 20</p>
     </CardHeader>
     <CardBody>
    
@@ -32,8 +32,8 @@ export default function Datacard() {
   <Card>
     <CardHeader>
       <img src="/icons/Pie shape 4.png" />
-      <p size='sm'> Total Votes</p>
-      <p size='md' className='font-bold'>25</p>
+      <p className="text-xl"> Total Votes</p>
+      <p className='font-bold text-xs'> 20</p>
     </CardHeader>
     <CardBody>
    
