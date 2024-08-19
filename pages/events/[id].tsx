@@ -36,8 +36,7 @@ import Link from 'next/link'
 import EventList from "../../components/EventList"
 import { useRouter } from 'next/router'
 
-const router = useRouter()
-
+ 
 interface LinkItemProps {
   name: string
   icon: IconType,
