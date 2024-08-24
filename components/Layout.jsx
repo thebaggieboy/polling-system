@@ -36,8 +36,10 @@ export default function Layout({children}) {
   return (
     <>
       
-   <NavBar/>  
+   
+      <div className="bg-green-400">
       {children}
+      </div>
     </>
   )
 }

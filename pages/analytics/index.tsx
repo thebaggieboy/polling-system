@@ -76,7 +76,7 @@ export default function SimpleSidebar() {
       {/* mobilenav */}
       
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-gray-100'>
+      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-green-400'>
         {/* Data display */}
           <AnalyticsList/>
  
@@ -94,7 +94,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
   <>
     <Box
-      bg={useColorModeValue('white', 'black')}
+      bg={useColorModeValue('black', 'black')}
       borderRight="1px"
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
       w={{ base: 'full', md: 60 }}
@@ -111,9 +111,9 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       </Flex>
       
       {LinkItems.map((link) => (
-     <div className={link.href =='/analytics' ? 'bg-green-300 ' : ''}>
+     <div className={link.href =='/analytics' ? 'bg-green-600 ' : ''}>
       <Link href={link.href}>
-          <NavItem key={link.name} style={{color:'black'}} className='text-xs ' icon={link.icon}>
+          <NavItem key={link.name} style={{color:'white'}} className='text-sm ' icon={link.icon}>
      
           {link.name}
         

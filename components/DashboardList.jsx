@@ -67,7 +67,7 @@ export default function DashboardList() {
   <br/>
 
 <Link href="/events/create" style={{float:'right'}} className="bg-green-800 rounded p-3 text-white">Create Event</Link>
-<h1 className='font-bold ml-10 text-2xl pt-5'>Your Dashboard</h1>
+<h1 className='font-bold ml-2 text-3xl pt-5'>Your Dashboard</h1>
 </div> <br />
    </div>
 

@@ -67,11 +67,11 @@ export default function EventList() {
   <br/>
 
 <Link href="/events/create" style={{float:'right'}} className="bg-green-800 rounded p-3 text-xs text-white">Create Event</Link>
-<h1 className='font-bold ml-10 text-2xl pt-5'>Your Events</h1>
+ 
 </div> <br />
    </div>
 
-<div class="grid p-5 grid-cols-1 bg-gray-50 grid-rows-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+<div class="grid p-5 grid-cols-1  grid-rows-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
 
 
  {data?.map(community => (

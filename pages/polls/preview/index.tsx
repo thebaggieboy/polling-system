@@ -149,7 +149,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
   <>
     <Box
-      bg={useColorModeValue('white', 'black')}
+      bg={useColorModeValue('black', 'black')}
       borderRight="1px"
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
       w={{ base: 'full', md: 60 }}
@@ -166,7 +166,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       </Flex>
       
       {LinkItems.map((link) => (
-     <div className={link.href =='/events' ? 'bg-green-300 ' : ''}>
+     <div className={link.href =='/events' ? 'bg-green-600 ' : ''}>
       <Link href={link.href}>
           <NavItem  key={link.name} style={{color:'black'}} className='text-xs ' icon={link.icon}>
      

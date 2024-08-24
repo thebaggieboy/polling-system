@@ -1,6 +1,6 @@
 'use client'
 
-import React, { ReactNode } from 'react'
+import React, { useState } from 'react'
 import {
   IconButton,
   Box,
@@ -51,7 +51,8 @@ const LinkItems: Array<LinkItemProps> = [
 
 export default function SimpleSidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-
+  const [showChoice, setShowChoice] = useState(false)
+  const [choiceCount, setChoiceCount] = useState(1)
   const addChoice = ()=>{}
 
   return (
@@ -73,13 +74,13 @@ export default function SimpleSidebar() {
       {/* mobilenav */}
       
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-gray-100'>
+      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-green-400'>
         {/* Data display */}
-        <nav class="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
-  <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
-    <li class="inline-flex items-center">
-      <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
-        <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <nav className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
+  <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+    <li className="inline-flex items-center">
+      <a href="#" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+        <svg className="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
           <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
         </svg>
         Home
@@ -109,11 +110,11 @@ export default function SimpleSidebar() {
         <h1 className='font-bold text-2xl '>New Poll</h1> <br/>
         <form action="">
         <div class="mb-5">
-        <label for="large-input" class="block mb-2 text-sm font-medium text-black">Event Name</label>
-        <input type="text" id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg disabled bg-gray-50 text-base"/> <br/>
-      <label for="large-input" class="block mb-2 text-sm font-medium text-black">Poll Title</label>
+        <label for="large-input" class="block mb-2 disabled text-lg font-semibold text-black">Event Name</label>
+        <input type="text" disabled value='Name of event' id="large-input" className="block w-full p-4 text-gray-900 border  rounded-lg  bg-gray-50 text-base"/> <br/>
+      <label for="large-input" class="block mb-2 text-lg font-semibold text-black">Poll Title</label>
       <input type="text" id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"/> <br/>
-      <label for="large-input" class="block mb-2 text-sm font-medium text-black">Choice</label>
+      <label for="large-input" class="block mb-2 text-lg font-semibold text-black">Choice</label>
       <textarea id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"></textarea> <br/>
    
       <a href="" style={{float:'right'}} className="bg-green-800 rounded p-3 text-xs text-white"> +Add Choice</a>
@@ -135,7 +136,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
   <>
     <Box
-      bg={useColorModeValue('white', 'black')}
+      bg={useColorModeValue('black', 'black')}
       borderRight="1px"
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
       w={{ base: 'full', md: 60 }}
@@ -152,9 +153,9 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       </Flex>
       
       {LinkItems.map((link) => (
-     <div className={link.href =='/polls' ? 'bg-green-300 ' : ''}>
+     <div className={link.href =='/polls/create/' ? 'bg-green-50 ' : ''}>
       <Link href={link.href}>
-          <NavItem  key={link.name} style={{color:'black'}} className='text-xs ' icon={link.icon}>
+          <NavItem  key={link.name} style={{color:'white'}} className='text-sm ' icon={link.icon}>
      
           {link.name}
         
