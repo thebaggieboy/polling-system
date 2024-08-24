@@ -3,47 +3,26 @@ import { Card, CardHeader, CardBody, CardFooter, SimpleGrid, Heading, Text, Avat
 export default function Datacard() {
   return (
     <>
-  <div className="p-10">
-  <h2 className='text-2xl font-bold'>Welcome Admin</h2>
+<section className="p-10">
+   
+<SimpleGrid spacing={4} className='p-10' templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
+
+<div className='shadow-sm shadow-black block border rounded-lg bg-gray-100 p-10 bg-surface-dark  shadow-secondary-1 text-surface"'>
+  <h2 className='font-semibold text-lg'> Total Events</h2>
+  <p className='font-bold text-xl'> 20</p>
   </div>
-<SimpleGrid spacing={3} className='p-10' templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
 
-  <Card>
-    <CardHeader>
-  
-      <h2 className='font-semibold text-lg'> Total Events</h2>
-      <p className='font-bold text-xl'> 20</p>
-    </CardHeader>
-    <CardBody>
-   
-    </CardBody>
-  
-  </Card>
+  <div className='shadow-sm shadow-black block border rounded-lg p-10 bg-gray-100 bg-surface-dark  shadow-secondary-1 text-surface"'>
+  <h2 className='font-semibold text-lg'> Total Polls</h2>
+  <p className='font-bold text-xl'> 20</p>
+  </div>
 
-  <Card>
-    <CardHeader>
-      
-      <h2 className='font-semibold text-lg'> Total Polls</h2>
-      <p className='font-bold text-xl'> 20</p>
-    </CardHeader>
-    <CardBody>
-   
-    </CardBody>
-  
-  </Card>
-
-  <Card>
-    <CardHeader>
-    
-      <h2 className='font-semibold text-lg'> Total Votes</h2>
-      <p className='font-bold text-xl'> 20</p>
-    </CardHeader>
-    <CardBody>
-   
-    </CardBody>
-
-  </Card>
+  <div className='shadow-sm shadow-black block border rounded-lg p-10 bg-gray-100 bg-surface-dark  shadow-secondary-1 text-surface"'>
+  <h2 className='font-semibold text-lg'> Total Votes</h2>
+  <p className='font-bold text-xl'> 20</p>
+  </div>
 </SimpleGrid>
+</section>
     </>
   )
 }

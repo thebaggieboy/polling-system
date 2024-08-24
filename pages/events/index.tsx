@@ -75,7 +75,7 @@ export default function SimpleSidebar() {
       {/* mobilenav */}
       
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-green-400'>
+      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-white'>
         {/* Data display */}
           <EventList/>
  

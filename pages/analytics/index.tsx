@@ -76,7 +76,7 @@ export default function SimpleSidebar() {
       {/* mobilenav */}
       
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-green-400'>
+      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-white'>
         {/* Data display */}
           <AnalyticsList/>
  
@@ -105,7 +105,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       {...rest}>
       <Flex h="90" alignItems="center" mx="8" className=' ' justifyContent="space-between" >
     <div className="m-10 ">
-    <img  src="/icons/logo.png" />
+  {/* {  <img  src="/icons/logo.png" />} */}
     </div>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>

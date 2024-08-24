@@ -72,9 +72,9 @@ export default function SimpleSidebar() {
       {/* mobilenav */}
       
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-green-400'>
+      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-white'>
         {/* Data display */}
-        <nav className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
+        <nav className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-black dark:border-gray-700" aria-label="Breadcrumb">
   <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
     <li className="inline-flex items-center">
       <a href="#" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
@@ -108,13 +108,13 @@ export default function SimpleSidebar() {
         <h1 className='font-bold text-2xl '>New Event</h1> <br/>
         <form action="">
         <div className="mb-5">
-      <label htmlFor="large-input" className="block mb-2 text-md font-bold text-black">Title</label>
-      <input type="text" id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"/> <br/>
-      <label htmlFor="large-input" className="block mb-2 text-md font-bold text-black">Description</label>
-      <textarea id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"></textarea> <br/>
+      <label htmlFor="large-input" className="block mb-2 text-sm font-bold text-black">Title</label>
+      <input type="text" id="large-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"/> <br/>
+      <label htmlFor="large-input" className="block mb-2 text-sm font-bold text-black">Description</label>
+      <textarea id="large-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"></textarea> <br/>
    
-      <label htmlFor="large-input" className="block mb-2 text-md font-bold text-black">Event Date</label>
-      <input type="date" id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"/> <br/>
+      <label htmlFor="large-input" className="block mb-2 text-sm font-bold text-black">Event Date</label>
+      <input type="date" id="large-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"/> <br/>
 
       <a href="" style={{float:'right'}} className="bg-green-800 rounded p-3 text-white">Create</a>
 
@@ -146,7 +146,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       {...rest}>
       <Flex h="90" alignItems="center" mx="8" className=' ' justifyContent="space-between" >
     <div className="m-10 ">
-    <img  src="/icons/logo.png" />
+{/* {    <img  src="/icons/logo.png" />} */}
     </div>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>

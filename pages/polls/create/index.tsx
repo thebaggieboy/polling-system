@@ -53,7 +53,9 @@ export default function SimpleSidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [showChoice, setShowChoice] = useState(false)
   const [choiceCount, setChoiceCount] = useState(1)
-  const addChoice = ()=>{}
+  const addChoice = ()=>{
+
+  }
 
   return (
  <>
@@ -74,9 +76,9 @@ export default function SimpleSidebar() {
       {/* mobilenav */}
       
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-green-400'>
+      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-white'>
         {/* Data display */}
-        <nav className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
+        <nav className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-black dark:border-gray-700" aria-label="Breadcrumb">
   <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
     <li className="inline-flex items-center">
       <a href="#" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
@@ -87,19 +89,19 @@ export default function SimpleSidebar() {
       </a>
     </li>
     <li>
-      <div class="flex items-center">
-        <svg class="rtl:rotate-180 block w-3 h-3 mx-1 text-gray-400 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+      <div className="flex items-center">
+        <svg className="rtl:rotate-180 block w-3 h-3 mx-1 text-gray-400 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
         </svg>
-        <a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Events</a>
+        <a href="#" className="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Events</a>
       </div>
     </li>
     <li aria-current="page">
-      <div class="flex items-center">
-        <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+      <div className="flex items-center">
+        <svg className="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
         </svg>
-        <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Create</span>
+        <span className="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Create</span>
       </div>
     </li>
   </ol>
@@ -109,15 +111,15 @@ export default function SimpleSidebar() {
 
         <h1 className='font-bold text-2xl '>New Poll</h1> <br/>
         <form action="">
-        <div class="mb-5">
-        <label for="large-input" class="block mb-2 disabled text-lg font-semibold text-black">Event Name</label>
-        <input type="text" disabled value='Name of event' id="large-input" className="block w-full p-4 text-gray-900 border  rounded-lg  bg-gray-50 text-base"/> <br/>
-      <label for="large-input" class="block mb-2 text-lg font-semibold text-black">Poll Title</label>
-      <input type="text" id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"/> <br/>
-      <label for="large-input" class="block mb-2 text-lg font-semibold text-black">Choice</label>
-      <textarea id="large-input" className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"></textarea> <br/>
+        <div className="mb-5">
+        <label for="large-input" className="block mb-2 disabled text-sm  font-semibold text-black">Event Name</label>
+        <input type="text" disabled value='Name of event' id="large-input" className="block w-full p-2 text-gray-900 border  rounded-sm  bg-gray-200 text-base"/> <br/>
+      <label for="large-input" class="block mb-2 text-sm font-semibold text-black">Poll Title</label>
+      <input type="text" id="large-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-sm bg-gray-50 text-base"/> <br/>
+      <label for="large-input" class="block mb-2 text-sm font-semibold text-black">Choice</label>
+      <textarea id="large-input"  name='default_choice' className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"></textarea> <br/>
    
-      <a href="" style={{float:'right'}} className="bg-green-800 rounded p-3 text-xs text-white"> +Add Choice</a>
+      <button  style={{float:'right'}} className="bg-green-800 rounded p-3 text-xs text-white"> +Add Choice</button>
 
   </div>
         </form>

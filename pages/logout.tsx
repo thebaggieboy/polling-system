@@ -28,12 +28,9 @@ import {
 
 
 import { IconType } from 'react-icons'
-
-import NavBar from './Navbar'
-
+ 
 import Link from 'next/link'
 
-import EventList from "../../components/EventList"
 import { useRouter } from 'next/router'
 
 
@@ -75,20 +72,20 @@ export default function SimpleSidebar() {
       {/* mobilenav */}
       
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-green-400'>
+      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-white'>
         {/* Data display */}
-        <section class="p-5">
-    <div class="px-4 mx-auto max-w-screen-xl text-center lg:py-16 px-4">
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-black md:text-5xl lg:text-2xl">Are you sure you want to logout?</h1>
+        <section className="p-5">
+    <div className="px-4 mx-auto max-w-screen-xl text-center lg:py-16 px-4">
+        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-black md:text-5xl lg:text-2xl">Are you sure you want to logout?</h1>
   
-        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href="/" class="inline-flex justify-center text-xs items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-green-800 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+        <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <a href="/" className="inline-flex justify-center text-xs items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-green-800 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                 Yes, i'm sure
-                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                 </svg>
             </a>
-            <a href="/dashboard" class="py-3 px-5 sm:ms-4 text-xs font-semibold text-green-600 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
+            <a href="/dashboard" className="py-3 px-5 sm:ms-4 text-xs font-semibold text-green-600 focus:outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
                 Cancel
             </a>  
         </div>
