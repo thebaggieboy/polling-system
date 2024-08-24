@@ -36,14 +36,12 @@ import Link from 'next/link'
 interface LinkItemProps {
   name: string
   icon: IconType,
-  href: string,
+  href: string
 }
 const LinkItems: Array<LinkItemProps> = [
   { name: 'Dashboard', icon: FiUser, href:'/dashboard' },
   { name: 'Events', icon: FiTrendingUp, href:'/events' },
-  { name: 'Polls', icon: FiCompass, href:'/polls' },
   { name: 'Analytics', icon: FiCompass, href:'/analytics' },
-
   { name: 'Logout', icon: FiStar, href:'logout' },
 
 ]
