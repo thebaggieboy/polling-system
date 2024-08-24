@@ -112,11 +112,11 @@ export default function SimpleSidebar() {
         <h1 className='font-bold text-2xl '>New Poll</h1> <br/>
         <form action="">
         <div className="mb-5">
-        <label for="large-input" className="block mb-2 disabled text-sm  font-semibold text-black">Event Name</label>
+        <label htmlFor="large-input" className="block mb-2 disabled text-sm  font-semibold text-black">Event Name</label>
         <input type="text" disabled value='Name of event' id="large-input" className="block w-full p-2 text-gray-900 border  rounded-sm  bg-gray-200 text-base"/> <br/>
-      <label for="large-input" class="block mb-2 text-sm font-semibold text-black">Poll Title</label>
+      <label htmlFor="large-input" className="block mb-2 text-sm font-semibold text-black">Poll Title</label>
       <input type="text" id="large-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-sm bg-gray-50 text-base"/> <br/>
-      <label for="large-input" class="block mb-2 text-sm font-semibold text-black">Choice</label>
+      <label htmlFor="large-input" className="block mb-2 text-sm font-semibold text-black">Choice</label>
       <textarea id="large-input"  name='default_choice' className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"></textarea> <br/>
    
       <button  style={{float:'right'}} className="bg-green-800 rounded p-3 text-xs text-white"> +Add Choice</button>

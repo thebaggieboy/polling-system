@@ -94,7 +94,7 @@ export default function SimpleSidebar() {
     </li>
     <li>
         <input type="radio" id="hosting-big" name="hosting" value="hosting-big" className="hidden peer"/>
-        <label for="hosting-big" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
+        <label htmlFor="hosting-big" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
             <div className="block">
                 <div className="w-full text-xs font-semibold">0-50 MB</div>
                 <div className="w-full">Good for big websites</div>
