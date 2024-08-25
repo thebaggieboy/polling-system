@@ -104,7 +104,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       {...rest}>
       <Flex h="90" alignItems="center" mx="8" className=' ' justifyContent="space-between" >
     <div className="m-10 ">
-    <img  src="/icons/logo.png" />
+    <img  src="https://nithubeventspoll.vercel.app/polls/create?poll_title=&choice-1=" />
     </div>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>

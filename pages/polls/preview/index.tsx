@@ -72,7 +72,7 @@ export default function SimpleSidebar() {
       {/* mobilenav */}
       
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-gray-100'>
+      <Box ml={{ base: 0, md: 60 }} p="10" className='bg-gray-200'>
         {/* Data display */}
     
 
@@ -82,7 +82,7 @@ export default function SimpleSidebar() {
 
     <li>
         <input type="radio" id="hosting-small" name="hosting" value="hosting-small" className="hidden peer" required />
-        <label htmlFor="hosting-small" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
+        <label htmlFor="hosting-small" className="inline-flex items-center justify-between w-full p-5 text-white bg-green-400 border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
             <div className="block">
                 <div className="w-full text-xs font-semibold">0-50 MB</div>
                 <div className="w-full">Good for small websites</div>
@@ -94,7 +94,7 @@ export default function SimpleSidebar() {
     </li>
     <li>
         <input type="radio" id="hosting-big" name="hosting" value="hosting-big" className="hidden peer"/>
-        <label htmlFor="hosting-big" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
+        <label htmlFor="hosting-big" className="inline-flex items-center justify-between w-full p-5 text-white bg-green-400 border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
             <div className="block">
                 <div className="w-full text-xs font-semibold">0-50 MB</div>
                 <div className="w-full">Good for big websites</div>
@@ -107,7 +107,7 @@ export default function SimpleSidebar() {
 
     <li>
         <input type="radio" id="hosting-big-2" name="hosting" value="hosting-big" className="hidden peer"/>
-        <label htmlFor="hosting-big-2" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
+        <label htmlFor="hosting-big-2" className="inline-flex items-center justify-between w-full p-5 text-white bg-green-400 border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
             <div className="block">
                 <div className="w-full text-xs font-semibold">0-50 MB</div>
                 <div className="w-full">Good for big websites</div>
@@ -118,7 +118,7 @@ export default function SimpleSidebar() {
         </label>
     </li> <li>
         <input type="radio" id="hosting-big-3" name="hosting" value="hosting-big" className="hidden peer"/>
-        <label htmlFor="hosting-big-3" className="inline-flex items-center justify-between w-full p-5 text-white bg-white border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
+        <label htmlFor="hosting-big-3" className="inline-flex items-center justify-between w-full p-5 text-white bg-green-400 border border-gray-200 rounded-lg cursor-pointer hover:text-gray-300 border-black peer-checked:text-gray-400 peer-checked:border-white  hover:text-gray-600  text-white bg-green-700 hover:bg-green-900">                           
             <div className="block">
                 <div className="w-full text-xs font-semibold">0-50 MB</div>
                 <div className="w-full">Good for big websites</div>
@@ -168,7 +168,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       {LinkItems.map((link) => (
      <div className={link.href =='/events' ? 'bg-green-600 ' : ''}>
       <Link href={link.href}>
-          <NavItem  key={link.name} style={{color:'black'}} className='text-xs ' icon={link.icon}>
+          <NavItem  key={link.name} style={{color:'white'}} className='text-xs ' icon={link.icon}>
      
           {link.name}
         
