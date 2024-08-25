@@ -102,9 +102,7 @@ const ChartFour: React.FC = () => {
       horizontalAlign: "left",
       fontFamily: "inter",
 
-      markers: {
-        radius: 99,
-      },
+    
     },
     // yaxis: {
     //   title: false,
