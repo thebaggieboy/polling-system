@@ -52,11 +52,23 @@ const LinkItems: Array<LinkItemProps> = [
 export default function SimpleSidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [showChoice, setShowChoice] = useState(false)
-  const [choiceCount, setChoiceCount] = useState(1)
+
+  var [choiceCount, setChoiceCount] = useState(1)
   const addChoice = ()=>{
-
-  }
-
+      console.log("Creating a new choice form")
+      setShowChoice(true)
+      choiceCount++
+   
+    }
+      function ChoiceForm(){
+      return (
+        <>
+               <textarea id="large-input"  name={`choice-${choiceCount}`} className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base">
+               </textarea> <br/>
+        </>
+      )
+    }
+    
   return (
  <>
  
@@ -113,13 +125,15 @@ export default function SimpleSidebar() {
         <form action="">
         <div className="mb-5">
         <label htmlFor="large-input" className="block mb-2 disabled text-sm  font-semibold text-black">Event Name</label>
-        <input type="text" disabled value='Name of event' id="large-input" className="block w-full p-2 text-gray-900 border  rounded-sm  bg-gray-200 text-base"/> <br/>
-      <label htmlFor="large-input" className="block mb-2 text-sm font-semibold text-black">Poll Title</label>
-      <input type="text" id="large-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-sm bg-gray-50 text-base"/> <br/>
+        <input type="text" disabled name='event_name' value='Name of event' id="large-input" className="block w-full p-2 text-gray-900 border  rounded-sm  bg-gray-200 text-base"/> <br/>
+      <label htmlFor="large-input"  className="block mb-2 text-sm font-semibold text-black">Poll Title</label>
+      <input type="text" id="large-input" name='poll_title' className="block w-full p-2 text-gray-900 border border-gray-300 rounded-sm bg-gray-50 text-base"/> <br/>
       <label htmlFor="large-input" className="block mb-2 text-sm font-semibold text-black">Choice</label>
-      <textarea id="large-input"  name='default_choice' className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base"></textarea> <br/>
+      <textarea id="large-input"  name={`choice-${choiceCount}`} className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base">
+      </textarea> <br/>
+
    
-      <button  style={{float:'right'}} className="bg-green-800 rounded p-3 text-xs text-white"> +Add Choice</button>
+      <button  onClick={addChoice} style={{float:'right'}} className="bg-green-800 rounded p-3 text-xs text-white"> +Add Choice</button>
 
   </div>
         </form>
