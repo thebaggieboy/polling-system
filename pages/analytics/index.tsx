@@ -36,7 +36,12 @@ import Link from 'next/link'
 import EventList from "../../components/EventList"
 
 
+
 import AnalyticsList from "../../components/AnalyticsList"
+import ChartOne from '@/components/Charts/ChartOne'
+import ChartTwo from '@/components/Charts/ChartTwo'
+import ChartThree from '@/components/Charts/ChartThree'
+import ChartFour from '@/components/Charts/ChartFour'
  
 interface LinkItemProps {
   name: string
@@ -79,7 +84,9 @@ export default function SimpleSidebar() {
       <Box ml={{ base: 0, md: 60 }} p="10" className='bg-white'>
         {/* Data display */}
           <AnalyticsList/>
+        
  
+
       </Box>
     </Box>
  </>

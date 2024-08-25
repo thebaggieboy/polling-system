@@ -37,7 +37,7 @@ export default function Layout({children}) {
     <>
       
    
-      <div className="bg-green-400">
+      <div className="">
       {children}
       </div>
     </>
