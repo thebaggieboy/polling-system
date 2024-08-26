@@ -33,7 +33,7 @@ export default function AnalyticsList() {
 
   return (
     <>
-<div class='p-10'>
+<div class=''>
     
 
 
@@ -71,13 +71,13 @@ export default function AnalyticsList() {
     <Link href="/events/create" style={{float:'right'}} className="bg-green-800 text-xs rounded p-3 text-white">Upgrade Plan</Link>
  
     </div> 
+<br />
 
-
-    <div className="p-10 grid grid-cols-12 gap-4 md:gap-6 2xl:gap-7.5">
-        <div className="col-span-12">
-          <ChartFour />
-        </div>
-        <ChartOne />
+    <div className="m-5 pt-3 grid grid-cols-12 gap-4 md:gap-6 2xl:gap-7.5">
+    
+  
+ 
+       
         <ChartTwo />
         <ChartThree />
       </div>
