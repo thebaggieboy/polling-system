@@ -124,7 +124,7 @@ export default function SimpleSidebar() {
            </span>
  
        </div>
-       <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900"><a href="#">Poll Title</a></h2>
+       <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900"><a href="#">How much do you expect to use each month?</a></h2>
     
        <div className="flex justify-between items-center">
    

@@ -77,7 +77,9 @@ export default function SimpleSidebar() {
     
 
 <ul className="grid w-full gap-6 md:grid-cols-2 p-10">
-<h2 className="mb-5 text-lg font-bold text-gray-900">How much do you expect to use each month?</h2> <br />
+
+
+<h1 className="mb-5 text-lg font-bold text-gray-900">How much do you expect to use each month?</h1> <br />
 
 
     <li>
