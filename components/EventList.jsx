@@ -29,8 +29,7 @@ export default function EventList() {
 
   return (
     <>
-<div >
-<div className="p-3">
+ <div className="">
 <div>
     
 
@@ -108,7 +107,6 @@ export default function EventList() {
  
 
    
-</div>
 </div>
     </>
   )

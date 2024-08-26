@@ -86,10 +86,10 @@ export default function SimpleSidebar() {
 </button>
    </div>} */}
           <section className='m-0 shadow-md shadow-black block border  bg-gray-100 bg-surface-dark  shadow-secondary-2 text-surface"'>
-            <button style={{float:'right'}} className="bg-green-800 p-3 text-xs rounded ml-2 text-white">
+            <button style={{float:'right'}} className="bg-green-800 p-3 text-xs   ml-2 text-white">
                         Invite
                     </button>
-                    <a href='/polls/create' style={{float:'right'}} className="bg-green-800 p-3 text-xs rounded text-white">
+                    <a href='/polls/create' style={{float:'right'}} className="bg-green-800 p-3 text-xs   text-white">
                        Create Poll
                     </a>
                 <div className="p-5 mb-4 " >
