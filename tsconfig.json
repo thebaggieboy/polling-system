@@ -16,6 +16,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/polls/preview/[id].jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/polls/preview/[id].jsx", "components/cards/Datacard.jsx"],
   "exclude": ["node_modules"]
 }
