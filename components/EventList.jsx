@@ -71,20 +71,20 @@ export default function EventList() {
 </div> <br />
    </div>
 
-<div class="grid p-5 grid-cols-1  grid-rows-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+<div class="grid m-5   grid-rows-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
 
 
  {data?.map(community => (
   <>
       <div
-    class="me-4 mb-5 p-2 text-black shadow-sm shadow-black block border rounded-lg bg-gray-100 bg-surface-dark  shadow-secondary-1 text-surface">
+    class="me-4 mb-3 p-10 text-black shadow-sm shadow-black block border rounded-lg bg-gray-100 bg-surface-dark  shadow-secondary-1 text-surface">
       
    <Link href={`/events/${community?.id}`}>
-   <div class="p-5 mb-4">
+   <div class="[-2 mb-4">
 
 
  <div className='flex'>
- <span> </span> <span className='font-bold text-lg pt-3 pl-2'>{community?.community_name}</span>
+ <span> </span> <span className='font-bold text-lg  pt-3 pl-2'>{community?.community_name}</span>
  </div>
   
   <p class=" text-xs font-semibold mt-2 ml-3">

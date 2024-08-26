@@ -76,7 +76,7 @@ export default function SimpleSidebar() {
       <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
       <Box ml={{ base: 0, md: 60 }} p="10" className='bg-white'>
         {/* Data display */}
-        <div style={{fontFamily:'Poppins, Sans-serif', lineHeight:'100%', letterSpacing:2}} className='p-5'>
+        <div style={{fontFamily:'Poppins, Sans-serif', lineHeight:'100%', letterSpacing:2}} className=''>
      {/* {       <div className="ml-5 mt-2 text-xs p-5">
    <button type="button" onClick={()=> router.back()} className="w-full flex items-center justify-center w-1/2 px-5 py-2 text-xs text-black transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
     <svg className="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -85,7 +85,7 @@ export default function SimpleSidebar() {
     <span>Go back</span>
 </button>
    </div>} */}
-          <section className='p-5 shadow-sm shadow-black block border rounded-lg bg-gray-100 bg-surface-dark  shadow-secondary-1 text-surface"'>
+          <section className='m-0 shadow-md shadow-black block border  bg-gray-100 bg-surface-dark  shadow-secondary-2 text-surface"'>
             <button style={{float:'right'}} className="bg-green-800 p-3 text-xs rounded ml-2 text-white">
                         Invite
                     </button>
@@ -113,22 +113,22 @@ export default function SimpleSidebar() {
 
 </div>
 
-            </section>
-          <section className='mt-5 '>
-          <h2 className="font-bold mb-4 text-1xl">My Polls (1)</h2>
-            <div  className="p-10 shadow-sm shadow-black block border rounded-lg bg-gray-100 bg-surface-dark  shadow-secondary-1 text-surface">
+            </section> <br />
+          <section className='m-1 '>
+          <h2 className="font-bold mb-4 text-1xl text-center">My Polls (1)</h2>
+            <div  className="p-10 shadow-md shadow-black block border   bg-gray-100 bg-surface-dark  shadow-secondary-1 text-surface">
        <div className="flex justify-between items-center mb-5 text-gray-500">
            <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded  ">
                <svg className="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
                Poll
            </span>
-           <span className="text-sm">14 days ago</span>
+ 
        </div>
        <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900"><a href="#">Poll Title</a></h2>
     
        <div className="flex justify-between items-center">
    
-           <a href="#" className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+           <a href="#" className="inline-flex items-center pt-3 font-medium text-primary-600 dark:text-primary-500 hover:underline">
                View
                <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
            </a>
